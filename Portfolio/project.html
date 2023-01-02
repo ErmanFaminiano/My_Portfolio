@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+	<head><meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projects</title>
+	<link rel="stylesheet" href="project.css"/>
+	<link rel="icon" href="image/Double-J-Design-Diagram-V2-Laptop.ico"/>
+</head>	
+<body>
+	 <div class="menu-navi">
+    <nav class="navbar" id="navbar">
+            <li><a href="index.html" class="btn">Home</a></li>
+            <li><a  target="_parent" href="project.html" class="btn active">Projects</a></li>
+            <li><a href="#" class="btn">Contact</a></li>
+            <li><a href="#" class="btn">About</a></li>
+    </nav>
+</div>
+
+<script>
+    var btnContainer = document.getElementById("navbar");
+    var btns = btnContainer.getElementsByClassName("btn");
+
+    for(var i =0; i<btns.length; i++){
+        btns[i].addEventListener('click', function(){
+            var current = document.getElementsByClassName('active');
+            current[0].className = current[0].className.replace(" active");
+            this.className += " active";
+        })
+    }
+</script></body>
+
+</html>

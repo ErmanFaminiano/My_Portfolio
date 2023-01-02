@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Red Hat Mono', monospace;
+}
+
+nav {
+    height: 4rem;
+    width: 100% auto;
+    background-color: transparent;
+}
+
+.menu-navi {
+    position: absolute;
+    left: 0;
+    line-height: 80px;
+    background-color: #252422;
+    height: 80px;
+    width: 100vw;
+}
+
+.menu-navi .navbar {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 2%;
+  
+}
+
+.menu-navi .navbar li{
+    list-style: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+     
+}
+.menu-navi .navbar li a{
+    color: white;
+    display: inline;    
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+.menu-navi .navbar li .active{
+    color: yellow;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    transition: 0.5s ease;
+}
+.menu-navi .navbar li :hover {
+    color: #304ffe;
+}

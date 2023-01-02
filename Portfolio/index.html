@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="image/Double-J-Design-Diagram-V2-Laptop.ico"/>
+    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+    <title>Erman Faminiano</title>
+ 
+</head>
+<body>
+    <div class="menu-navi">
+    <nav class="navbar" id="navbar">
+            <li><a href="index.html" class="btn active">Home</a></li>
+            <li><a href="project.html" class="btn">Projects</a></li>
+            <li><a href="#" class="btn">Contact</a></li>
+            <li><a href="#" class="btn">About</a></li>
+    </nav>
+</div>
+<div class="main-body"> 
+	<div class="name">
+		<h1>Erman Faminiano</h1>
+	    </div>
+        <div class="social-med">
+            <ul id="nav_ul">
+                <li style="cursor: pointer;"><a target="_blank" href="https://www.facebook.com/O.Narra"><span class="iconify" data-icon="fa-brands:facebook" id="fb"></span></a></li>
+                <li><a target="_blank" href="https://discord.com/channels/Narra#2747"><span class="iconify" data-icon="akar-icons:discord-fill" id="discord"></span></a></li>
+                <li><a target="_blank" href="https://github.com/Famzrockzzz"><span class="iconify" data-icon="akar-icons:github-fill" id="github"></span></a></li>
+            </ul>
+        </div>		
+           
+             <img src="image/-ebi710-removebg-preview.png" alt="CEO of Technoloops" id="ceo"/>
+            </div>
+                
+</body>	
+<script>
+    var btnContainer = document.getElementById("navbar");
+    var btns = btnContainer.getElementsByClassName("btn");
+
+    for(var i =0; i<btns.length; i++){
+        btns[i].addEventListener('click', function(){
+            var current = document.getElementsByClassName('active');
+            current[0].className = current[0].className.replace(" active");
+            this.className += " active";
+        })
+    }
+</script>
+</html>

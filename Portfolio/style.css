@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+:root{
+    --background:#252422;
+    --secondary: #ccc5b9;
+    --third: #403d39;
+    --fourth: #eb5e28;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Mono', monospace;
+}
+.main-body img {
+    width: auto;
+  
+
+}
+
+body {
+    background-color: rgb(216, 214, 214);
+}
+/*Navigation starts here*/
+nav {
+    height: 4rem;
+    width: 100% auto;
+    background-color: transparent;
+}
+
+.menu-navi {
+    position: absolute;
+    left: 0;
+    line-height: 80px;
+    background-color: #252422;
+    height: 80px;
+    width: 100vw;
+}
+
+.menu-navi .navbar {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 2%;
+  
+}
+
+.menu-navi .navbar li{
+    list-style: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+     
+}
+.menu-navi .navbar li a{
+    color: white;
+    display: inline;    
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+.menu-navi .navbar li .active{
+    color: yellow;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    transition: 0.5s ease;
+}
+.menu-navi .navbar li :hover {
+    color: #304ffe;
+}
+
+
+#ceo {
+ height: 25rem;   
+ margin-left: 10rem;
+ margin-top: 12rem;
+}
+
+.name  {  
+  color: black;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateX(85%);
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.social-med {
+    position: absolute;
+    left: 57%;
+    top: 70%;
+}
+
+#nav_ul {
+    display: flex;
+    font-size: 50px;
+    list-style: none;
+    gap: 25px;
+}
+
+
+/*Modifying icons*/
+#fb {
+    color: rgb(59,89,152);
+}
+#fb:hover {
+    font-size: 60px;
+
+}
+#discord {
+    color: #7289DA;
+}
+#discord:hover {
+    font-size: 60px;
+}
+#github {
+    color: #c9510c;
+}
+#github:hover {
+    font-size: 60px;
+}
+
+/*Animation*/
+.name h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 2px solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
